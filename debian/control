@@ -6,7 +6,6 @@ Build-Depends: debhelper (>= 9),
  dh-python,
  python-setuptools (>= 5.5.1),
  python-all (>= 2.7.8),
- python-all-dev (>= 2.7.8),
  python-axolotl-curve25519 (>= 0.1),
  python-crypto (>= 2.6.1),
  python-protobuf (>= 2.6.1)
@@ -18,12 +17,12 @@ Homepage: https://pypi.python.org/pypi/python-axolotl/0.1.6
 
 Package: python-axolotl
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends},
+Depends: ${python:Depends}, ${misc:Depends},
  python-axolotl-curve25519 (>= 0.1),
  python-crypto (>= 2.6.1),
  python-protobuf (>= 2.6.1)
 Description: Python port of libaxolotl-android
- This is a python port of libaxolotol-android package originally written by
+ This is a Python port of libaxolotol-android package originally written by
  Moxie Marlinspike. The Libaxolotol library is defined as a ratcheting
  forward secrecy protocol that works in synchronous and asynchronous messaging
  environments.
