@@ -1,3 +1,9 @@
+python-axolotl (0.1.6-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Josue Ortega <josueortega@debian.org.gt>  Mon, 27 Apr 2015 22:30:58 -0600
+
 python-axolotl (0.1.6-1) experimental; urgency=low
 
   * Initial release (Closes: #776501)
