@@ -9,6 +9,7 @@ from .protocol.prekeywhispermessage import PreKeyWhisperMessage
 from axolotl.nosessionexception import NoSessionException
 from axolotl.invalidmessageexception import InvalidMessageException
 from axolotl.duplicatemessagexception import DuplicateMessageException
+import binascii
 import sys
 
 if sys.version_info >= (3,0):
@@ -48,6 +49,9 @@ class SessionCipher:
                                                                previousCounter, ciphertextBody,
                                                                sessionState.getLocalIdentityKey(),
                                                                sessionState.getRemoteIdentityKey())
+
+
+        # print(binascii.hexlify(ciphertextMessage.serialize()))
 
         if sessionState.hasUnacknowledgedPreKeyMessage():
             items = sessionState.getUnacknowledgedPreKeyMessageItems()
