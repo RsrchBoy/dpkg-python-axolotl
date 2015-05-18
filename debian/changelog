@@ -5,8 +5,6 @@ python-axolotl (0.1.7-1) unstable; urgency=medium
       strictly an earlier version than 3.0.0-alpha-2.
     - debian/docs: Removed since upstream does not provide anymore the README.md
       file in its tarball.
-  * debian/watch: Updated in order to use the pypi.debian.net redirector
-    service.
 
  -- Josue Ortega <josueortega@debian.org.gt>  Mon, 11 May 2015 21:09:45 -0600
 
