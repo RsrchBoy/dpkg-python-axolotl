@@ -1,5 +1,6 @@
 setup.py
 axolotl/__init__.py
+axolotl/axolotladdress.py
 axolotl/duplicatemessagexception.py
 axolotl/identitykey.py
 axolotl/identitykeypair.py
@@ -21,6 +22,7 @@ axolotl/ecc/eckeypair.py
 axolotl/groups/__init__.py
 axolotl/groups/groupcipher.py
 axolotl/groups/groupsessionbuilder.py
+axolotl/groups/senderkeyname.py
 axolotl/groups/ratchet/__init__.py
 axolotl/groups/ratchet/senderchainkey.py
 axolotl/groups/ratchet/sendermessagekey.py
@@ -71,7 +73,6 @@ axolotl/tests/inmemorysignedprekeystore.py
 axolotl/tests/test_sessionbuilder.py
 axolotl/tests/test_sessioncipher.py
 axolotl/tests/test_sigs.py
-axolotl/tests/test_stuff.py
 axolotl/tests/groups/__init__.py
 axolotl/tests/groups/inmemorysenderkeystore.py
 axolotl/tests/groups/test_groupcipher.py
