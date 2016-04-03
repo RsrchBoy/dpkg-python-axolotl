@@ -1,5 +1,9 @@
-from axolotl.kdf.hkdfv3 import HKDFv3
-from axolotl.util.byteutil import ByteUtil
+# -*- coding: utf-8 -*-
+
+from ...kdf.hkdfv3 import HKDFv3
+from ...util.byteutil import ByteUtil
+
+
 class SenderMessageKey:
     def __init__(self, iteration, seed):
         """
@@ -21,7 +25,7 @@ class SenderMessageKey:
         return self.iv
 
     def getCipherKey(self):
-        return self.iv
+        return self.cipherKey
 
     def getSeed(self):
         return self.seed
